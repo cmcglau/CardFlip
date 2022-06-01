@@ -29,12 +29,9 @@
 }
 
 .Green {
-  transform-origin: bottom left;
-  display: block;
   background-color: green;
   height: 20vh;
   width: 10vw;
-  transition: transform .75s ease;
 }
 
 .White {
