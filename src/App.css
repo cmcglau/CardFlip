@@ -24,22 +24,6 @@
   color: white;
 }
 
-.flipcard {
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-/*   border: 1px solid #CCC; */
-  perspective: 600px;
-}
-
-.flipper {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transition: 1s;
-  transform-style: preserve-3d;
-}
-
 .front {
   background: #282c34;
   position: absolute;
@@ -58,9 +42,197 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-.flipper.is-flipped {
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.flipcard {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+/*   border: 1px solid #CCC; */
+  perspective: 600px;
+}
+
+.flipper0 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flipper1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flipper2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flipper3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flipper4 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flipper5 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flipper6 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flipper7 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flipper8 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flipper9 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flipper10 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flipper11 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+.flipper12 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flipper13 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flipper14 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flipper15 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+
+.flipper0.is-flipped0 {
   transform: rotateY(180deg);
 }
+.flipper1.is-flipped1 {
+  transform: rotateY(180deg);
+}
+.flipper2.is-flipped2 {
+  transform: rotateY(180deg);
+}
+.flipper3.is-flipped3 {
+  transform: rotateY(180deg);
+}
+.flipper4.is-flipped4 {
+  transform: rotateY(180deg);
+}
+.flipper5.is-flipped5 {
+  transform: rotateY(180deg);
+}
+.flipper6.is-flipped6 {
+  transform: rotateY(180deg);
+}
+.flipper7.is-flipped7 {
+  transform: rotateY(180deg);
+}
+.flipper8.is-flipped8 {
+  transform: rotateY(180deg);
+}
+.flipper9.is-flipped9 {
+  transform: rotateY(180deg);
+}
+.flipper10.is-flipped10 {
+  transform: rotateY(180deg);
+}
+.flipper11.is-flipped11 {
+  transform: rotateY(180deg);
+}
+.flipper12.is-flipped12 {
+  transform: rotateY(180deg);
+}
+.flipper13.is-flipped13 {
+  transform: rotateY(180deg);
+}
+.flipper14.is-flipped14 {
+  transform: rotateY(180deg);
+}
+.flipper15.is-flipped15 {
+  transform: rotateY(180deg);
+}
+
 .buttonCol {
   background-color: #282c34;
   border: none;
