@@ -9,6 +9,7 @@ import carrot from "./Images/fruitsandvegetables_Carrot.png";
 import cherry from "./Images/fruitsandvegetables_Cherry.png";
 import corn from "./Images/fruitsandvegetables_Corn.png";
 
+
 const cardType = [
   apple, 
   apple,
@@ -28,30 +29,31 @@ const cardType = [
   corn
 ];
 
-let numFlips = 0;
+let numberFlips = 0;
+let totalFlips = 0;
 let firstcard = -1;
 let seccard = -1;
+const displayNum = 0;
 
 const Cards = (props) => {
   const {fruit} = props;
-  const [cardState, setCardState] = React.useState(0);
+  
   var card = document.querySelector('.flipper' + fruit);
   const handleFlip = () => {
     if (card === null) {
       card = document.querySelector('.flipper' + fruit);
     }
-    numFlips = numFlips + 1;
-    console.log('Number of flips = ' + numFlips);
+    numberFlips = numberFlips + 1;
+    totalFlips = totalFlips + 1;
+    console.log('Total Flips = ' + totalFlips);
 
-    if (numFlips === 1) {
+    if (numberFlips === 1) {
       firstcard = fruit;
       card.classList.toggle('is-flipped'+firstcard);
-      window.flipCount = window.flipCount + 1;
     }
-    else if (numFlips === 2) {
+    else if (numberFlips === 2) {
       seccard = fruit;
       card.classList.toggle('is-flipped'+seccard);
-      window.flipCount = window.flipCount + 1;
       if ((firstcard%2 === 0 && firstcard !== seccard- 1) || (firstcard%2 === 1 && firstcard !== seccard + 1)) {
 
         setTimeout(()=>{
@@ -68,7 +70,7 @@ const Cards = (props) => {
 
         
       }
-      numFlips = 0;
+      numberFlips = 0;
     }
     /*
     if(cardState === 0){
@@ -103,3 +105,4 @@ const Cards = (props) => {
 }
 
 export default Cards;
+

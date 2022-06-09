@@ -3,7 +3,6 @@ import Footer from './Footer';
 import Cards from './Cards';
 import React, {useState} from 'react';
 
-window.flipCount = 0;
 
 const cardNum = [
   0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
@@ -27,14 +26,13 @@ function shuffle(array) {
   return array;
 }
 
-// Used like so
 shuffle(cardNum);
+const displayNum = 1;
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <p> This is my Card Matching App </p>
-        <p> Number of flips is: {window.flipCount} </p>
         <div className='cardGrid'>
           <Cards fruit = {cardNum[0]}/>
           <Cards fruit = {cardNum[1]}/>
